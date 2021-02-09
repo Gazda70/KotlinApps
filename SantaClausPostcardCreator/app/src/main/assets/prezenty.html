@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="prezenty.css">
+</head>
+
+<body>
+<center>
+<button id="addButton" type="button" onclick="addNewPresent()">Dodaj</button>
+</center>
+
+<center>
+<button id="generateButton" type="button" onclick="generatePresentList()">Generuj</button>
+</center>
+
+<script type="text/javascript">
+    function addNewPresent(){
+    prezenty.addPresent()
+    }
+
+    function generatePresentList(){
+    prezenty.makePhoto()
+    }
+</script>
+</body>
+
+</html>

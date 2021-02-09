@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="kartka.css">
+</head>
+
+<body onload="display()">
+
+    <div class="location"id="location_field">
+
+    </div>
+
+    <div class="photo" id="photo_field">
+        <img id="myImage"  src="" style="width:95px; height:70px"/>
+    </div>
+
+<div class="present" id="present_field">
+
+</div>
+<script type="text/javascript">
+    function display(){
+        document.getElementById("location_field").innerHTML=kartka.getMyLocation();
+        document.getElementById("myImage").src=kartka.getMyPhoto();
+        document.getElementById("present_field").innerHTML=kartka.getMyGifts();
+    }
+
+</script>
+</body>
+
+</html>
